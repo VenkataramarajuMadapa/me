@@ -7,21 +7,86 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 80%;
-            margin: auto;
+            margin: 30px auto;
             overflow: hidden;
+            max-width: 900px;
+            padding: 10px;
+
         }
         .main-info {
             background: #333;
             color: #fff;
-            padding: 20px;
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 8px;
         }
         .main-info h1 {
-            margin: 0;
+            margin: 10px 0 5px 0;
+            font-size: 1.8em;
         }
-        .hobbies, .lewis, .course, .job {
+        .main-info h3{
+            margin: 4px 0;
+            font-size: 0.95em;
+        }
+        .main-info a{
+            color: #dcdcdc;
+            text-decoration: none;
+        }
+        .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        margin-bottom: 10px;
+        }
+
+        section {
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* Section headings */
+section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs and lists */
+section p, section ul {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+
+ul li {
+    margin: 5px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+        .hobbies, .lewis, .course, .job, .fun-fact {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
@@ -31,35 +96,53 @@
 <body>
     <div class="container">
         <header class="main-info">
-            <h1>[Your First and Last Name]</h1>
-            <h1>Preferred Name: [Your Preferred Name]</h1>
+            <img src="ram-profile.png" alt="Venkataramaraju Madapa" class="profile-img">
+            <h1>Venkataramaraju Madapa</h1>
+            <h1>Preferred Name: Ram</h1>
+            <h3>Email: <a href="mailto:venkataramaraju2024@gmail.com">venkataramaraju2024@gmail.com</a></h3>
+            <h3>Discord: ram_1138_</h3>
         </header>
 
         <section class="lewis">
-			<h2>Year at Lewis: [Your Years at Lewis]</h2>
-			<h2>Lewis major/minor/concentrations: [Your major/minor/concentrations]</h2>
-			<h2>Reasons for pursuing this degree: [Your reasons for pursuing the degree]</h2>
+			<section class="lewis">
+            <h2>At Lewis University</h2>
+            <p><strong>Year:</strong> 2</p>
+            <p><strong>Major:</strong> Master of Science in Computer Science</p>
+            <p><strong>Reason for Pursuing:</strong> To deepen my technical expertise in software engineering and cloud technologies, and prepare for a Software Development Engineer (SDE) role at leading tech companies.</p>
+        </section>
         </section>
 
 		<section class="course">
             <h2>Reasons for Taking This Course</h2>
-            <p>[Your reasons for taking this course]</p>
+            <ul>
+                <li>Strengthen understanding of web technologies and Git workflows</li>
+                <li>Learn deployment practices used in modern software engineering</li>
+                <li>Refine front-end development and hosting skills through hands-on projects</li>
+            </ul>
         </section>
 
 		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Your job responsibilities]</p>
+			<h2>Current/Recent Job</h2>
+            <p>I previously worked as a Software Engineer at Inture Software and as an Associate Software Engineer at Accenture. 
+            My responsibilities included developing and deploying backend services using Java and Spring Boot, integrating AWS cloud services, and improving system reliability and performance.</p>
         </section>		
 
         <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>[Your hobbies or special interests]</p>
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Playing volleyball</li>
+                <li>Writing stories and screenwriting</li>
+                <li>Exploring storytelling through coding projects</li>
+            </ul>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>[A fun fact about yourself]</p>
+            <p>Before moving into tech, I worked as an Assistant Director for two films in India. 
+            I made a big career shift but have never lost my love for storytelling — I just express it differently now.</p>
         </section>
+        
     </div>
+    <div><p>Last Updated on 22/10/2025</p></div>
 </body>
 </html>
